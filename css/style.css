@@ -265,8 +265,8 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   border-radius: 1.5511875rem;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
 }
 
 .button--fw {
@@ -767,8 +767,8 @@ body {
   -webkit-transform: translate(0, 0);
       -ms-transform: translate(0, 0);
           transform: translate(0, 0);
-  -webkit-transition: all 0.8s 0.5s;
-  transition: all 0.8s 0.5s;
+  -webkit-transition: translate 0.8s 0.5s, opacity 0.8s 0.5s, background-color 0.3s;
+  transition: translate 0.8s 0.5s, opacity 0.8s 0.5s, background-color 0.3s;
 }
 
 .advantages__container {
@@ -795,10 +795,6 @@ body {
 
 .advantages__image {
   position: relative;
-}
-
-.advantages__image img {
-  max-width: 100%;
   opacity: 0;
   -webkit-transform: translate(0, 10%);
       -ms-transform: translate(0, 10%);
@@ -806,6 +802,8 @@ body {
 }
 
 .advantages__image img:first-child {
+  max-width: 100%;
+  cursor: pointer;
   position: relative;
   z-index: 2;
   -webkit-transition: -webkit-transform 0.3s ease 0s;
@@ -814,7 +812,7 @@ body {
   transition: transform 0.3s ease 0s, -webkit-transform 0.3s ease 0s;
 }
 
-._watcher-view .advantages__image img {
+._watcher-view .advantages__image {
   opacity: 1;
   -webkit-transform: translate(0, 0);
       -ms-transform: translate(0, 0);
@@ -827,12 +825,16 @@ body {
   position: absolute;
   left: -34%;
   top: 0;
+  z-index: 1;
+  max-width: 100%;
 }
 
 .advantages__bg-2 {
   position: absolute;
   left: -34%;
   bottom: 9.7%;
+  z-index: 1;
+  max-width: 100%;
 }
 
 .advantages__content {
@@ -862,8 +864,8 @@ body {
   -webkit-transform: translate(0, 0);
       -ms-transform: translate(0, 0);
           transform: translate(0, 0);
-  -webkit-transition: all 0.8s 0.5s;
-  transition: all 0.8s 0.5s;
+  -webkit-transition: translate 0.8s 0.5s, opacity 0.8s 0.5s, background-color 0.3s;
+  transition: translate 0.8s 0.5s, opacity 0.8s 0.5s, background-color 0.3s;
 }
 
 .since__header {
@@ -919,8 +921,10 @@ body {
   -webkit-transform: translate(0, 0);
       -ms-transform: translate(0, 0);
           transform: translate(0, 0);
-  -webkit-transition: all 0.8s 0.5s;
-  transition: all 0.8s 0.5s;
+  -webkit-transition: opacity 0.8s 0.5s, border 0.3s, background-color 0.3s, -webkit-transform 0.8s 0.5s;
+  transition: opacity 0.8s 0.5s, border 0.3s, background-color 0.3s, -webkit-transform 0.8s 0.5s;
+  transition: opacity 0.8s 0.5s, transform 0.8s 0.5s, border 0.3s, background-color 0.3s;
+  transition: opacity 0.8s 0.5s, transform 0.8s 0.5s, border 0.3s, background-color 0.3s, -webkit-transform 0.8s 0.5s;
 }
 
 .card-since__img {
@@ -1530,8 +1534,8 @@ body {
   -webkit-transform: translate(0, 0);
       -ms-transform: translate(0, 0);
           transform: translate(0, 0);
-  -webkit-transition: all 0.8s 0.2s;
-  transition: all 0.8s 0.2s;
+  -webkit-transition: translate 0.8s 0.5s, opacity 0.8s 0.5s, background-color 0.3s;
+  transition: translate 0.8s 0.5s, opacity 0.8s 0.5s, background-color 0.3s;
 }
 
 .our-galery__body {
